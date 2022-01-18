@@ -134,7 +134,7 @@ Add **cStrTools.cpp**, **Word.cpp** and **WordStat.cpp** to the â€œSource Filesâ
 (The module holding the **main** function)
 
 **WordStat.cpp** file should contain the following code:
-```C++
+
 ```C++
 #include <iostream>
 #include "Word.h"

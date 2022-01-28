@@ -49,12 +49,6 @@ If the file contains work that is not yours (you found it online or somebody pro
 
 If you have helped someone with your code. Let them know of these regulations and in your 'reflect.txt' of part 2 (DIY), write exactly which part of your code was copied and who was the recipient of this code.<br />By doing this you will be clear of any wrongdoing if the recipient of the code does not honour these regulations.
 
-
-### If you have helped someone with your code
-
-If you have helped someone with your code. Let them know of these regulations and in your 'reflect.txt' of part 2 (DIY), write exactly which part of your code was copied and who was the recipient of this code.<br />By doing this you will be clear of any wrongdoing if the recipient of the code does not honour these regulations.
-
-
 ## Compiling and Testing Your Program
 
 All your code should be compiled using this command on `matrix`:

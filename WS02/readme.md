@@ -465,7 +465,7 @@ main.cpp
 
 ### Data Entry
 
-To Be Announced Shortly
+Follow the instructions of the submitter program.
 
 ## Submission Process:
 

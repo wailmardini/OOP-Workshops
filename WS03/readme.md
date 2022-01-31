@@ -1,6 +1,6 @@
 # Workshop #3: Member Functions and Privacy
-* version 1.0
-   * Part 1
+* version 1.1  
+   * Part 1 // (v1.1) minor fixed applied
    * Part 2 
  
 
@@ -72,7 +72,7 @@ g++ -Wall -std=c++11 -g -o ws file1.cpp file2.cpp ...
 After compiling and testing your code, run your program as following to check for possible memory leaks (assuming your executable name is `ws`):
 
 ```bash
-valgrind -s --leak-check=full ws
+valgrind ws
 ```
 
 To check the output, use a program that can compare text files.  Search online for such a program for your platform, or use *diff* available on `matrix`.
@@ -88,7 +88,7 @@ e) the speed of a train (km/hour).
 
 Declare three C++ constants, namely MAX_NAME_LEN, MAX_PEOPLE and MAX_SPEED. Set MAX_NAME_LEN to 20, MAX_PEOPLE to 1000 and MAX_SPEED to 320.
 
-Declare three private data members. Declare an array to hold the name of a train, not exceeding MAX_NAME_LEN characters. Declare an integer variable for the number of people on a train. Declare a double variable for the speed of a train.
+Declare three private data members. Declare an array to hold th e name of a train, not exceeding MAX_NAME_LEN characters. Declare an integer variable for the number of people on a train. Declare a double variable for the speed of a train.
 
 Store your class definition in a header file named Train.h and your member function definitions in an implementation file named Train.cpp.
 
@@ -98,13 +98,13 @@ The member function set( ):
      ```void set(const char*, int, double);```
 It uses three input parameters to initialize a Train object. It receives the name of the train, the number of people on the train and the speed of the train. It validates the data values received and uses these data values to set the respective data members, only if all of them are valid. 
             
-All the data values are valid if a) the first parameter is not nullptr and the length of the name is greater than zero, b) the number of people is not negative, and c) the speed is between zero and MAX_SPEED (inclusive). You must use strncpy() to copy the first MAX_NAME_LENGTH characters from the input parameter to the data member that holds the name of a train.
+All the data values are valid if a) the first parameter is not nullptr and the length of the name is greater than zero, b) the number of people is between zero and MAX_PEOPLE (inclusive), and c) the speed is between zero and MAX_SPEED (inclusive). You must use strncpy() to copy the first MAX_NAME_LENGTH characters from the input parameter to the data member that holds the name of a train.
 
-If the data values are invalid, the member function initializes the Train object to a safe empty state. You may use your own definition of a safe empty state. However, you must document your definition as comments. Otherwise, you will lose marks.
+If the data values are invalid, the member function initializes the Train object to a safe empty state. You may use your own definition of a safe empty state. However, you must document your definition as comments. Otherwise you will lose marks.
 
 The member function getNumberOfPeople:
     ```int getNumberOfPeople() const;```
-This query returns the number of people on a train.
+This query returns the  number of people on a train.
 
 The member function getName: 
    ``` const char* getName() const; ```
@@ -136,18 +136,18 @@ If the object is in a safe empty state, the function displays the following mess
 #include <iomanip>
 using namespace std;
 #include "Train.h"
-using namespace seneca;
+using namespace sdds;
 
-int main(){
+int main() {
 
 	Train trains[7];
 
-    trains[0].set(nullptr, 100, 123.55);
+	trains[0].set(nullptr, 100, 123.55);;
 	trains[1].set("", 100, 123.55);
-    trains[2].set("VIA Rail Abitibi", -100, 123.45);
-    trains[3].set("VIA Rail Abitibi", 100, -123.45);
+	trains[2].set("VIA Rail Abitibi", -100, 123.45);
+	trains[3].set("VIA Rail Abitibi", 100, -123.45);
 	trains[4].set("VIA Rail Abitibi", 100, 5000);
-	trains[5].set("Seneca Express", 0, 0);
+	trains[5].set("Seneca Express", -1, -1);
 	trains[6].set("VIA Rail Abitibi", 333, 115.95);
 
 	cout << "----------------------------------------" << endl;
@@ -170,31 +170,25 @@ int main(){
 		trains[i].display();
 	}
 	cout << "----------------------------------------" << endl << endl;
-	
+
 	cout << "----------------------------------------" << endl;
-	cout << "3. Testing the member functions." << endl;  
+	cout << "3. Testing the member functions." << endl;
 	cout << "----------------------------------------" << endl;
-	
-    Train t1, t2;
-		  
-	t1.set(nullptr, -1, -1);
+
+	Train t2;
+
 	t2.set("Bullet Train", 100, 245.95);
-		  
-    cout << t1.getNumberOfPeople() 
-	     << ',' 
-		 << t1.getName()
-		 << ','
-		 << t1.getSpeed() << endl;
-	
+
 	cout << t2.getNumberOfPeople()
-	     << ','
+		 << ','
 		 << t2.getName()
 		 << ','
-		 << t2.getSpeed() << endl; 
+		 << t2.getSpeed() << endl;
 	cout << "----------------------------------------" << endl << endl;
 
-    return 0;
-} 
+	return 0;
+}
+ 
 ```
 
 ## Sample Output
@@ -229,9 +223,9 @@ SPEED             : 115.95 km/h
 ----------------------------------------
 3. Testing the member functions.
 ----------------------------------------
-0,Seneca Express,0.00
 100,Bullet Train,245.95
 ----------------------------------------
+
 ```
 ## PART 1 Submission 
 
@@ -262,9 +256,9 @@ and follow the instructions.
 ## Part 2: DIY
 Declare and implement two member functions and a global function that will change the state of a Train object. These functions will NOT change the state of a Train object if it is in a safe empty state. Note: Review the testing program and the sample output in order to understand the behaviour of these three functions. 
 
-The member function ```loadPeople``` changes the number of people on a train. The value of the input parameter is used to increase or decrease the number of people on a train. It must make sure that the number of people will not be negative or exceed MAX_PEOPLE. It returns true if the operation succeeds. It returns false if the Train object is in a safe empty state.
+The member function ```loadPeople``` changes the number of people on a train. The value of the input parameter is used to increase or decrease the number of people on  a train. It must make sure that the number of people will not be negative or exceed MAX_PEOPLE. It returns true if the operation succeeds. It returns false if the Train object is in a safe empty state.
 
-The member function ```changeSpeed``` changes the speed of a train. The value of the input parameter is used to increase or decrease the speed of a train. It must make sure that the speed of a train will not be negative or exceed MAX_SPEED. It returns true if the operation succeeds. It returns false if the Train object is in a safe empty state.
+The member function ```changeSpeed``` changes the speed of a train. The value of the input parameter is used to increase or decrease the speed of  a train. It must make sure that the speed of a train will not be negative or exceed MAX_SPEED. It returns true if the operation succeeds. It returns false if the Train object is in a safe empty state.
 
 A global function ```transfer``` moves as many passengers as possible from the second Train to the first Train. It has two parameters (first, second) that reference two Train objects. The function must make sure that the number of people on both Train objects will not be negative or exceed MAX_PEOPLE. It returns the number of people that have been moved to the first Train. It returns -1 if any of the Train objects is in a safe empty state. 
 

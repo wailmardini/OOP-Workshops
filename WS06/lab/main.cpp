@@ -1,10 +1,13 @@
 // Workshop #6:
-// Version: 1.0
+// Version: 1.1
 // File name: main.cpp
 // Date: 2021/12/02
 // Author: Wail Mardini
 // Description:
 // This file tests the lab section of your workshop
+// Version 1.1 Cornel Barna
+// added goodCardFile.close(); in main to fix
+// the problem in reading goodInfo.csv in showfile
 ///////////////////////////////////////////////////
 
 #include <iostream>
@@ -23,7 +26,7 @@ void validationTest();
 int main() {
    int i;
    int recs = noOfRecs("HealthCardInfo.csv");
-   HealthCard C{ "Gandalf The Grey",111,"XL","123234LA"};
+   HealthCard C{ "Gandalf The Grey",111,"XL","123234LA" };
    ifstream CardFile("HealthCardInfo.csv");
    ofstream goodCardFile("goodInfo.csv");
    validationTest();
@@ -31,8 +34,8 @@ int main() {
    for (i = 0; i < recs; i++) {
       C = ReadCardFromFile(CardFile);
       cout << C << endl;
-      if (CardFile) 
-          C.print(goodCardFile, true);
+      if (CardFile)
+         C.print(goodCardFile, true);
    }
    if (i == recs)
       cout << "\nAll records were read successfully!" << endl;
@@ -40,9 +43,11 @@ int main() {
       cout << "Read " << i - 1 << " out of " << recs << " Records successfully" << endl;
       cout << "Record number " << i << " is invalid!" << endl;
    }
+   goodCardFile.close();
    showFile("goodInfo.csv");
    return 0;
 }
+
 
 void validationTest() {
    int i;

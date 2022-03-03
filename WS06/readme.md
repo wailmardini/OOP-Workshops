@@ -1,5 +1,5 @@
 # Workshop #6: Classes and resources, IO operators
-# version 1.0 
+# version 1.1 (added tester output for part 2 and fixed a bug in main.cpp part 1)
 
 In this workshop, you will implement a class with overloaded constructors. Then you will overload IO operators that will be used to read and write on the screen and files.
 
@@ -724,8 +724,129 @@ int main() {
    return 0;
 }
 ```
+## Tester Output
+```text
+Names;
+First (Middle) Last
+Homer
+Homer Simpson
+Homer Jay Simpson
+Bad Name
+Enter the follwing:
+> Homer Jay Simpson Adams
+> Homer Jay Simpson Adams
+Bad Name entry!!!
+Enter the follwing:
+> Homer Jay Simpson
+> Homer Jay Simpson
+Name: Homer Jay Simpson
+Short: Homer J. Simpson
+Enter the follwing:
+> Homer Simpson
+> Homer Simpson
+Name: Homer Simpson
+Short: Homer Simpson
+Enter the follwing:
+> Homer
+> Homer
+Name: Homer
+Short: Homer
+Milhouse+= "": Milhouse
+Milhouse+= "    ": Milhouse
+Milhouse Van+= Van: Milhouse Van
+Milhouse Van Houten+= Houten: Milhouse Van Houten
+Bad Name+= Adams: Bad Name
+Fred+= Fred: Fred
+An assigned name: Homer Jay Simpson
+A self assigned name: Homer Jay Simpson
 
-
+Names in the file in short form:
+-------------------------------
+Abraham Simpson
+Agnes Skinner
+Akira Kurosawa
+Alice Glick
+Allison Taylor
+Apu Nahasapeemapetilon
+Artie Ziff
+Baby Gerald
+Barney Gumble
+Bart Simpson
+Bernice Hibbert
+Brandine Spuckler
+Bumblebee Man
+Carl Carlson
+Chazz Busby
+Cletus Spuckler
+Comic B. Guy
+Dewey Largo
+Disco Stu
+Dolph Starbeam
+Drederick Tatum
+Edna Krabappel
+--------------Bad record!!!
+Gloria Jailbird
+Grounds k. Willie
+Hans Moleman
+Helen Lovejoy
+Herman Hermann
+Homer J. Simpson
+Jacqueline Bouvier
+--------------Bad record!!!
+Jessica Lovejoy
+Jimbo Jones
+Johnny Tightlips
+Judge R. Snyder
+Kearney Zzyzwicz
+Kent Brockman
+Kirk V. Houten
+Krusty T. Clown
+Kumiko Albertson
+Lenny Leonard
+Lindsey Naegle
+Ling Bouvier
+Lionel Hutz
+Lisa Simpson
+Luann V. Houten
+Luigi D. Risotto
+Lunchlady Doris
+Maggie Simpson
+Manjula Nahasapeemapetilon
+Marge Simpson
+Martin Prince
+Maude Flanders[D]
+Mayor J. Quimby
+Milhouse V. Houten
+Miss Springfield
+Moe Szyslak
+Mona Simpson
+Ned Flanders
+Nelson Muntz
+Old J. Man
+Patty Bouvier
+Rabbi H. Krustofsky
+Rainier Wolfcastle
+Ralph Wiggum
+Rod Flanders
+Roger M. Jr.
+Ruth Powers
+Sarah Wiggum
+Sea Captain
+Selma Bouvier
+Seymour Skinner
+Shauna Chalmers
+Sideshow Mel
+Snake Jailbird
+Squeaky V. Teen
+Surly Duff
+The R. Texan
+Todd Flanders
+Troy McClure
+Uter Zorker
+Waylon Smithers
+Wendell Borton
+Wise Guy
+```
 
 
 ## Reflection

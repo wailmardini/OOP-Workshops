@@ -273,7 +273,6 @@ Example: `Luke Skywalker,1231231234-XL,AF1234567`
 - extract the version number code into a vCode local variable using get for 3 char or up to ',' whichever comes first
 - extract a comma **','** using **extractChar** private function
 - extract the stock control number to the local variable (using get to read 10 char or up to '\n' whichever comes first)
-- extract a new line character **'\n'** (using **extractChar** private function)
 - if **istr** is not in a failure state
     - all data were read successfully, use the **set** private function to set values of the object to read value
 - before returning, clear the state using istr.clear() and ignore the remaining of the line until '\n'

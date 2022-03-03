@@ -140,7 +140,7 @@ cin.ignore(1000, '\n'); // flush the invalid value or everything after the numbe
 
 ## Part 1 - lab (50%), The HealthCard class
 
-Your task for this part of your workshop is to complete the implementation of a class called HeathCard. This class encapsulates some basic health-card information of a person in Ontario using the following attributes:
+Your task for this part of your workshop is to complete the implementation of a class called HealthCard. This class encapsulates some basic health-card information of a person in Ontario using the following attributes:
 
 ```C++
  class HealthCard {
@@ -166,9 +166,9 @@ These values are validated (considered **valid**) as follows:
    - The version number consists of two characters
    - The Stock control number consists of nine characters
    
-The HeathCard class is to validate and store the above information via initialization and data entry from istream.
+The HealthCard class is to validate and store the above information via initialization and data entry from istream.
 
-Also, the HeathCard class must comply with the rule of three. (i.e. the implementation of copy constructor, copy assignment and destructor)
+Also, the HealthCard class must comply with the rule of three. (i.e. the implementation of copy constructor, copy assignment and destructor)
 
 Although the name of the HealthCard is dynamically held, we can assume that the maximum length for a name is 55 characters. This value should be kept in a constant global variable so it can be changed at compile-time if needed.
 
@@ -176,7 +176,7 @@ Although the name of the HealthCard is dynamically held, we can assume that the 
    const int MaxNameLength = 55;
 ```
 
-Finally, A HeathCard object should reveal its status (of being valid or invalid) via a Boolean type conversion overload (a true outcome means the object is valid and a false outcome means it is invalid).
+Finally, A HealthCard object should reveal its status (of being valid or invalid) via a Boolean type conversion overload (a true outcome means the object is valid and a false outcome means it is invalid).
 
 To accomplish the above and have an organized and modular code, implement these private methods to help you with the implementation of the whole logic: (you can add more if you like to)
 
@@ -186,7 +186,7 @@ To accomplish the above and have an organized and modular code, implement these 
 Returns true is the four parts of the ID card are valid. (see [Validation](#validation))
 
 #### void setEmpty();
-Sets the HeathCard object to a recognizable empty (invalid) state by setting **m_name** to nullptr;
+Sets the HealthCard object to a recognizable empty (invalid) state by setting **m_name** to nullptr;
 
 #### void allocateAndCopy(const char* name);
 - Free the memory pointed by **m_name** 
@@ -215,7 +215,7 @@ Validates the arguments,  reallocates memory for the name and sets the object at
 - If not, it deletes the memory pointed by **m_name** and sets the object to a safe empty state (**setEmpty()**)
 
 #### Constructors
-The HeathCard can either get created with no values (default constructor) into a safe empty state or use all four values. 
+The HealthCard can either get created with no values (default constructor) into a safe empty state or use all four values. 
 
 > Instead of overloading the constructor you can use one constructor with the default values for the four parameters, (i.e nullptr, 0, {}, {} ) and remember to reuse the **set** function for the latter case. 
 
@@ -223,11 +223,11 @@ The HeathCard can either get created with no values (default constructor) into a
 
 ### Rule of three
 #### Copy Constructor
-`HeathCard(const HeathCard& hc);`
+`HealthCard(const HealthCard& hc);`
 - if the **hc** object is valid it will set the values of the current object to those of the incoming argument (**hc** using assignment to *this).
 
 #### Copy Assignment operator overload
-`HeathCard& operator=(const HeathCard& hc);`
+`HealthCard& operator=(const HealthCard& hc);`
 - First, it will make sure that this is not a "self-copy" by comparing the address of the current object and the address of the incoming argument.
   - If it is not a self copy this function works exactly like the copy constructor
 - If it is a self copy don't perform any action 

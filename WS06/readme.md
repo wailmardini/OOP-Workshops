@@ -1,5 +1,6 @@
 # Workshop #6: Classes and resources, IO operators
 # version 1.1 (added tester output for part 2 and fixed a bug in main.cpp part 1)
+# version 1.2 (removed irrelevant instruction in data entry)
 
 In this workshop, you will implement a class with overloaded constructors. Then you will overload IO operators that will be used to read and write on the screen and files.
 
@@ -519,7 +520,7 @@ If you have any additional custom code, (i.e. functions, classes etc) that you w
 
 ### Data Entry
 
-??? explain what data  will be used for submission and testing
+Follow the instructions in the tester 
 
 ### Submission Process:
 
@@ -870,7 +871,7 @@ If you have any additional custom code, (i.e. functions, classes etc) that you w
 
 ### Data Entry
 
-??? explain what data  will be used for submission and testing
+Follow the instructions in the tester 
 
 ### Submission Process:
 

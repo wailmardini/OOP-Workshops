@@ -198,7 +198,7 @@ Sets the HealthCard object to a recognizable empty (invalid) state by setting **
   - If it is the same, Remove it from the keyboard and throw it away! (i.e. istr.ignore())
   - If not:
     - Ignore all the remaining characters (up to 1000 characters) or the value of ch (use istr.ignore(int n,char c))
-    - Set the istream into a fail state (use istr.setstate(iso::failbit))
+    - Set the istream into a fail state (use istr.setstate(ios::failbit))
 #### ostream& printIDInfo(ostream& ostr)const;
 Inserts the three parts related to the main card number, version code and stock number of the health card information into the **istr** object in the following format:
 
@@ -210,7 +210,7 @@ and then returns the **istr** object reference
 #### void set(const char* name, long long number, const char vCode[], const char sNumber[]);
 Validates the arguments,  reallocates memory for the name and sets the object attributes to their corresponding values.
 - If the name and the three parts are valid (see [Validation](#validation)) `call the private function to validate`
-    - Calls the **reallocateAndCopy** function to set the name
+    - Calls the **allocateAndCopy** function to set the name
     - Sets the three parts to their values (m_number, m_vCode, m_sNumber)
 - If not, it deletes the memory pointed by **m_name** and sets the object to a safe empty state (**setEmpty()**)
 
@@ -279,14 +279,14 @@ Example: `Luke Skywalker,1231231234-XL,AF1234567`
 - at the end return the **istr** reference
 
 ### insertion operator overload
-`ostream& operator<<(ostream& ostr, const Contact& hc);`
+`ostream& operator<<(ostream& ostr, const HealthCard& hc);`
 
-if **hc** is valid it will print it using the **print** function on the screen and not on File, (i.e. onFile is false). Otherwise, it will print `"Invalid Card Number"`.
+if **hc** is valid it will print it using the **print** function on the screen and not to File, (i.e. toFile is false). Otherwise, it will print `"Invalid Card Number"`.
 
 In the end, it will return the **ostr** reference.
 
 ### extraction operator overload
-`istream& operator>>(istream& istr, Contact& hc)`
+`istream& operator>>(istream& istr, HealthCard& hc)`
 
 returns the **read** method of the **hc** argument.
 

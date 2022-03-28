@@ -1,5 +1,5 @@
 # Workshop #9: Derived Classes and Resources
-Version 1.0
+Version 1.1 (added `#include <fstream>` to main.cpp)
 
 In this workshop, you are to code/complete two classes:
 - **Text:** A class that can read the contents of a text file into memory and insert it into ostream.
@@ -220,13 +220,15 @@ To accomplish the above do the insertion into ostream as follows:
 Workshop 9 part 1
 Module: N/A
 Filename: main.cpp
-Version 1
+Version 1.1
 Author: Fardad Soleimanloo  22/03/26
 Revision History
 -----------------------------------------------------------
 Date       Reason
+22/03/27   Missed #include <fstream>
 -----------------------------------------------------------*/
 #include <iostream>
+#include <fstream>
 #include "HtmlText.h"
 #include "Text.h"
 using namespace std;

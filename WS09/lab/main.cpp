@@ -2,13 +2,15 @@
 Workshop 9 part 1
 Module: N/A
 Filename: main.cpp
-Version 1
+Version 1.1
 Author: Fardad Soleimanloo  22/03/26
 Revision History
 -----------------------------------------------------------
 Date       Reason
+22/03/27   Missed #include <fstream>
 -----------------------------------------------------------*/
 #include <iostream>
+#include <fstream>
 #include "HtmlText.h"
 #include "Text.h"
 using namespace std;

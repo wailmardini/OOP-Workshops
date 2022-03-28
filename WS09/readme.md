@@ -1,5 +1,6 @@
 # Workshop #9: Derived Classes and Resources
-Version 1.1 (added `#include <fstream>` to main.cpp)
+- Version 1.1 (added `#include <fstream>` to main.cpp)
+- Version 1.2 (Corrected saveHtml() filename in `main_prof.cpp` at submission time)
 
 In this workshop, you are to code/complete two classes:
 - **Text:** A class that can read the contents of a text file into memory and insert it into ostream.

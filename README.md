@@ -1,43 +1,10 @@
 # Computer preparation and Getting Workshop files
 
 ## IPC144 Review Session  for OOP244 Students
-The review session on IPC144/BTP100 was held on Sunday Jan 16th. <br />
-This session was open to all the students who needed to review the 144 concepts before starting 244 subjects.<br />
+The review session on IPC144/BTP100 will be held on Monday May 16th at 10:00AM. <br />
+This session will be open to all the students who needed to review the 144 concepts before starting 244 subjects.<br />
 
-[Sample codes done in class](https://github.com/Seneca-244200/OOP244-NAA-and-NBB-Notes/tree/main/144100Review)
-
-### Review Recording
-(Thanks to Armando Villavona for the time stamps)
-- [Part 1](https://www.youtube.com/watch?v=U1Ge3tkUNo8)
-  - 00:20 Intro
-  - 00:40 Discord
-  - 06:00 Submitter / Matrix
-  - 27:30 IPC
-  - 31:20 Memory
-  - 36:20 Compilers
-  - 40:20 Types
-  - 1:05:30 Simple Calculations
-  - 1:24:30 Expressions
-  - 1:45:00 How to Better understand Your Code
-- [Part 2](https://www.youtube.com/watch?v=A32XivTl-0Y)
-  - 2:00 Logic
-  - 1:02:00 Style Guidelines
-  - 1:10:00 Testing and Debugging Techniques
-  - 1:21:00 Pointers
-  - 1:44:00 Arrays
-  - 1:54:00 Pointers and Arrays
-  - 2:00:00 Structs
-  - 2:11:00 Array of Structs
-  - 2:23:00 Text Files
-- [Part 3](https://www.youtube.com/watch?v=9WTJ-pDTePo)
-  - 8:00 Character Strings
-  - 10:00 String Library
-  - 15:00 2D Arrays
-  - 23:00 Algorithms
-  - 24:00 Portability
-  - 25:00 Q/A 
-
-
+Use a microphone, use your real name (the one on your student card) and click [HERE]() to join the session.
 
 ## Setting up your computers for OOP244
 
@@ -51,9 +18,9 @@ Go to this url: https://tinyurl.com/244setup
 (if you have not followed the Installation guides to prepare your computer go to **Using [Download Zip](#using-download-zip)**)<br />
 
 ### Using [Git](https://git-scm.com/download/win)
-- Open https://github.com/Seneca-244200/OOP-Workshops and click on “Code” Button; this will open “Clone with HTTPS” window.<br />
+- Open https://github.com/Seneca-244200/OOP-Workshops and click on “Code” Button; this will open “Clone with SSH” or “Clone with HTTPS” window.<br />
 ![The Code Button](images/code.png)
-> If the window is titled “Clone with SSH” then click on “Use HTTPS”: <br />
+> If you don't have a Github account with SSH setup, and the window is titled “Clone with SSH” then click on “Use HTTPS”: <br />
 ![Use https](images/usehttps.png)
 - Copy the https URL by clicking on the button on the right side of the URL:<br />![Copy URL](images/copyurl.png)
 - Open File Explorer on your computer and select or create a directory for your workshops.
@@ -80,7 +47,8 @@ git pull<ENTER>
 ``` 
 >  in the cloned repository directory to update and sync your local workshop to the one on Github without having to download it again. Note that this will only apply the changes made and will not affect any work that you have done on your workshop.
 
-#### Using Download ZIP
+#### Using Download ZIP 
+> :warning: Do not use unless you failed to use the above methods
 - Open https://github.com/Seneca-244200/OOP-Workshops  and click on “Code” button and click on “Download ZIP”.<br />
 ![Download Zip](images/downloadzip.png)<br />
 - This will download a zipped file copy of the workshop repository from Github to your computer. You can extract this file to where you want to do your workshop. <br />

@@ -4,7 +4,7 @@
 The review session on IPC144/BTP100 will be held on Monday May 16th at 10:00AM. <br />
 This session will be open to all the students who needed to review the 144 concepts before starting 244 subjects.<br />
 
-Use a microphone, use your real name (the one on your student card) and click [HERE]() to join the session.
+Use a microphone, use your real name (the one on your student card) and click [HERE](https://github.com/Seneca-244200/OOP244-NAA-ZAA-NFF-Notes/blob/main/README.md#144100-review-session--for-244200-students) to join the session.
 
 ## Setting up your computers for OOP244
 

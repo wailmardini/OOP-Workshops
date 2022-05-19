@@ -2,7 +2,7 @@
 ## Overview Session
 An overview session will be done on workshop 1, part 1 and 2, on Thu. May 19th at 16:00, You are welcome to join by **using your real Seneca Name** (what is on your student card, otherwise you will be kicked out).
 
-Click on the follwing link  at 16:00: [WS1 Overview session by Fardad]()
+Click on the follwing link  at 16:00: [WS1 Overview](https://connect.rna2.blindsidenetworks.com/invite/to?c=1UjveOIr7civ6SsDG4x0yq2pQaVy4iLLG2TuRso6YYs&m=f182c5fed6c3b14d3a8379e50632e1a4ffbbe5a0&t=1652990207509&u=senecacollege)
 
 ## Learning Outcomes
 

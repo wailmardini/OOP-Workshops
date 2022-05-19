@@ -1,4 +1,8 @@
 # Workshop #1: Modules
+## Overview Session
+An overview session will be done on workshop 1, part 1 and 2, on Thu. May 19th at 16:00, You are welcome to join by **using your real Seneca Name** (what is on your student card, otherwise you will be kicked out).
+
+Click on the follwing link  at 16:00: [WS1 Overview session by Fardad]()
 
 ## Learning Outcomes
 

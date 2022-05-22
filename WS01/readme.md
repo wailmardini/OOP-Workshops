@@ -1,4 +1,8 @@
 # Workshop #1: Modules
+## Overview Session
+The overview session was held on Thu. May 19th at 16:00.
+
+To view the session recroding click here [WS1 Overview](https://recordings.rna2.blindsidenetworks.com/senecacollege/142746f4e9d27ffabde29661522c53351062c6d5-1652990207550/capture/)
 
 ## Learning Outcomes
 

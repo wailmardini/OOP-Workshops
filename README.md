@@ -1,10 +1,10 @@
 # Computer preparation and Getting Workshop files
 
 ## IPC144 Review Session  for OOP244 Students
-The review session on IPC144/BTP100 will be held on Monday May 16th at 10:00AM. <br />
-This session will be open to all the students who needed to review the 144 concepts before starting 244 subjects.<br />
+The review session on IPC144/BTP100 was held on monday may 13th at 10 AM
+This session was open to all the students who needed to review the 144/100 concepts before starting 244/200 subjects.
 
-Use a microphone, use your real name (the one on your student card) and click [HERE]() to join the session.
+[144/100 Review Recrodings](https://github.com/Seneca-244200/OOP244-NAA-ZAA-NFF-Notes/blob/main/README.md#144100-review-recrodings)
 
 ## Setting up your computers for OOP244
 
